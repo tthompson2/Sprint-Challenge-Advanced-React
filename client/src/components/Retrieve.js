@@ -7,7 +7,7 @@ class Retrieve extends React.Component {
     constructor() {
         super();
         this.state = {
-            players: []
+            playerData: []
         }
     }
 
@@ -30,6 +30,8 @@ componentDidMount() {
     }
 
     render() {
+
+        console.log(this.state.playerData);
 
         return (
             <div>
