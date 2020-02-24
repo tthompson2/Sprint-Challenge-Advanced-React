@@ -10,10 +10,11 @@ function PlayerCard(props) {
             {props.data.map(player => {
                 return (
                 <div>
-                {player.name}
-                {player.country}
-                {player.id}
-                {player.searches}
+                <div>*******************************************************************</div>
+                <div>Name: {player.name} </div>
+                <div>Country:{player.country}</div>
+                <div> Id: {player.id}</div>
+                <div>Searches:{player.searches}</div>
                 </div>
                 );
             }
