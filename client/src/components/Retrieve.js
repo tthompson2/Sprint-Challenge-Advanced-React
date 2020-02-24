@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import PlayerCard from "./PlayerCard";
+import PlayerCard from "./PlayerCard.js";
 
 class Retrieve extends React.Component {
 

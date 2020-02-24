@@ -1,6 +1,6 @@
 import React from "react";
 
-function PlayerCard(props) {
+const PlayerCard = (props) => {
 
     console.log(props.data);
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  useWhiteMode from "../hooks/useWhiteMode";
+import  useWhiteMode from "../hooks/useWhiteMode.js";
 
 const NavBar = () => {
   const [whiteMode, setWhiteMode] = useWhiteMode(false);

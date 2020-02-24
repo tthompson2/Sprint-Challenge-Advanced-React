@@ -1,29 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import NavBar from "./components/NavBar";
 import { render } from "@testing-library/react";
-import PlayerCard from "./components/PlayerCard";
-
 
 test('renders without crashing', () => {
-  ReactDOM.render(<App />);
+  render(<App />);
 });
 
-xtest("search for string Marta", () => {
-   const {getByText} = ReactDOM.render(<App />);
+test("search for string Marta", () => {
+   const {getByText} = render(<App />);
 
    getByText(/marta/i);
 });
 
-xdescribe('NavBar renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<NavBar/>, div);
-  ReactDOM.unmountComponentAtNode(div);
-})
+test("search for last name Tierna", () => {
+  const { getByText } = render(<App />);
+  getByText(/tierna/);
+});
 
-xdescribe('A PlayerCard manages to render successfully without crashing the application', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<PlayerCard/>, div);
-  ReactDOM.unmountComponentAtNode(div);
-})
+test("search for string Person", () => {
+
+  const {getByText } = render(<App />);
+  getByText(/person/i);
+});
+
+test("search for string App.js", () => {
+  const { getByText } = render(<App/>);
+  getByText(/app/i);
+});
