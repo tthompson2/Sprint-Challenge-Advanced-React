@@ -17,10 +17,10 @@ componentDidMount() {
     axios
          .get("http://localhost:5000/api/players")
          .then(response => {
-             console.log(response);
+             console.log(response.data);
 
              this.setState({
-                players: response
+                playerData: response.data,
              }) 
          })
 
@@ -34,7 +34,8 @@ componentDidMount() {
         return (
             <div>
                 <PlayerCard 
-                data = {this.players}/>
+                data = {this.state.playerData}
+                />
             </div>
         )
     }

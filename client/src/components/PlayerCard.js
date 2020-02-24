@@ -5,7 +5,12 @@ function PlayerCard(props) {
     return (
         <div>
             Name List:
-            {Object.entries(props).map(item => <div>{item.name}</div>)}
+            {props.playerData.map(player => {
+                {player.name}
+                {player.country}
+                {player.id}
+                {player.searches}
+            })}
         </div>
     )
 }
