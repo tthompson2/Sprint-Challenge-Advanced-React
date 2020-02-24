@@ -9,7 +9,7 @@ const NavBar = () => {
   };
   return (
     <nav className="navbar">
-      <h1>Crypto Tracker</h1>
+      <h1>Person List</h1>
       <div className="white-mode__toggle">
         <div
           onClick={toggleMode}

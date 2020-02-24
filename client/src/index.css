@@ -15,6 +15,7 @@ code {
 .white-mode {
   color: #fff;
   background-color: #fff;
+
 }
 
 .white-mode__toggle {
@@ -24,4 +25,8 @@ code {
   height: 20px;
   position: relative;
   width: 40px;
+}
+
+.navbar {
+  border: none;
 }

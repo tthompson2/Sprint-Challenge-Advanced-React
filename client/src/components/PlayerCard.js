@@ -12,9 +12,9 @@ function PlayerCard(props) {
                 <div>
                 <div>*******************************************************************</div>
                 <div>Name: {player.name} </div>
-                <div>Country:{player.country}</div>
+                <div>Country: {player.country}</div>
                 <div> Id: {player.id}</div>
-                <div>Searches:{player.searches}</div>
+                <div>Searches: {player.searches}</div>
                 </div>
                 );
             }
