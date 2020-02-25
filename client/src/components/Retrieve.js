@@ -35,6 +35,7 @@ componentDidMount() {
 
         return (
             <div>
+                Retrieval Successful:
                 <PlayerCard 
                 data = {this.state.playerData}
                 />
